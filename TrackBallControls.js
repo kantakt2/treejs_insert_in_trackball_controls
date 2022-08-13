@@ -144,6 +144,9 @@
 
 						eyeDirection.copy( _eye ).normalize();
 						objectUpDirection.copy( scope.object.up ).normalize();
+
+                        console.log(scope.object.up);
+
 						objectSidewaysDirection.crossVectors( objectUpDirection, eyeDirection ).normalize();
 						objectUpDirection.setLength( _moveCurr.y - _movePrev.y );
 						objectSidewaysDirection.setLength( _moveCurr.x - _movePrev.x );
